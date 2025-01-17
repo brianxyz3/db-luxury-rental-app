@@ -55,7 +55,7 @@ const Navbar = () => {
     //     </nav>
     // )
     return (
-        <nav id="top" className={`${isOpen && "bg-white/50 md:bg-transparent"} w-full fixed top-0 z-1 px-3 text-blue-600 md:text-[#1009a0] pb-2 pt-1`}>
+        <nav id="top" className={`${isOpen && "bg-black/75 md:bg-transparent"} w-full fixed top-0 z-1 px-3 text-blue-600 md:text-[#1009a0] pb-2 pt-1`}>
             <div className="flex justify-between md:items-center">
                 <div className="text-2xl font-bold font-sans text-blue-800"><Link to="/"><span className="text-blue-300">DB</span>Luxury&Rental</Link></div>
                 <div className={`${isOpen ? "h-52 opacity-100" : "h-0 opacity-0"} duration-300 md:opacity-100 md:h-fit md:flex md:justify-evenly md:w-11/12`}>
