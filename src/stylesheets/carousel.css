@@ -1,0 +1,39 @@
+.slider {
+    height: var(--HEIGHT);
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            transparent,
+            #000 10% 90%,
+            transparent);
+}
+
+.slider .slider_list {
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--WIDTH) * 7);
+    position: relative;
+}
+
+
+.slider .slider_list .slider_item {
+    width: var(--WIDTH);
+    height: var(--HEIGHT);
+    position: absolute;
+    left: 100%;
+    animation: slider 10s linear infinite;
+    animation-delay: calc((10s / 7) * (var(--POSITION) - 1));
+}
+
+.slider .slider_list .slider_item img {
+    width: 100%;
+}
+
+@keyframes slider {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: calc(var(--WIDTH)* -1);
+    }
+}
