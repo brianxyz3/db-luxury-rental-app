@@ -1,8 +1,8 @@
 
 const Copyright = () => {
     return (
-        <div className="sticky bottom-0">Copyright</div>
+        <div className="sticky sm:static bottom-0">Copyright</div>
     )
 }
 
-export default Copyright
+export default Copyright;

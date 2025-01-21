@@ -57,8 +57,8 @@ const Navbar = () => {
     return (
         <nav id="top" className={`${isOpen && "bg-black/75 md:bg-transparent"} w-full fixed top-0 z-1 px-3 text-blue-600 md:text-[#1009a0] pb-2 pt-1`}>
             <div className="flex justify-between md:items-center">
-                <div className="text-2xl font-bold font-sans text-blue-800"><Link to="/"><span className="text-blue-300">DB</span>Luxury&Rental</Link></div>
-                <div className={`${isOpen ? "h-52 opacity-100" : "h-0 opacity-0"} duration-300 md:opacity-100 md:h-fit md:flex md:justify-evenly md:w-11/12`}>
+                <div className="text-2xl font-bold font-sans text-blue-800"><Link to="/"><span className="text-blue-300 bg-black p-1 border border-blue-900">DB</span>Luxury&Rental</Link></div>
+                <div className={`${isOpen ? "h-52 opacity-100" : "h-0 opacity-0 hidden"} duration-300 md:opacity-100 md:h-fit md:flex md:justify-evenly md:w-11/12`}>
                     <div className={"w-full flex justify-center"}>
                         <div className="flex justify-center text-left border-1 md:border-none py-3 md:gap-8 gap-3.5 absolute md:static top-12 left-0 flex-col md:flex-row w-full md:w-full">
                             {navItems.map((item, idx) => (
