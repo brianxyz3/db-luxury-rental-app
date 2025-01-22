@@ -12,8 +12,39 @@
 img {
     display: block;
 }
+/* Utilities */
+.text_shadow {
+    text-shadow: 1px 1px 4px #fff;
+}
+
+.disable_scroll {
+    overflow: hidden;
+}
+
+.black_gradient {
+    background-image: radial-gradient(#475569, #000);
+}
 
 /* General style */
 body {
     overflow-x: hidden;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0);
+    animation: navScroll forwards;
+    animation-timeline: scroll();
+    animation-range: contain 0% contain 15%;
+}
+
+@keyframes navScroll {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+        color: #000;
+    }
+
+    to {
+        background-color: rgba(0, 0, 0, 1);
+        color: #fff;
+    }
 }
