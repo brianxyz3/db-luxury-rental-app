@@ -37,3 +37,12 @@
         left: calc(var(--WIDTH)* -1);
     }
 }
+@media screen and (max-width:500px) {
+    .slider {
+        height: 40px;
+    }
+
+    .slider .slider_list .slider_item {
+        height: 40px;
+    }
+}

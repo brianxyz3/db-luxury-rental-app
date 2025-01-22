@@ -4,6 +4,7 @@ import Copyright from "../components/Copyright";
 
 
 const MainLayout = () => {
+
     return (
         <section className="h-svh">
             <Navbar />
