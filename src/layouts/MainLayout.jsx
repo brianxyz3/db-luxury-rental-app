@@ -1,6 +1,6 @@
 import { Outlet } from "react-router"
 import Navbar from "../components/navbar";
-import Copyright from "../components/Copyright";
+import Footer from "../components/Footer";
 
 
 const MainLayout = () => {
@@ -9,7 +9,7 @@ const MainLayout = () => {
         <section className="h-svh">
             <Navbar />
             <Outlet />
-            <Copyright />
+            <Footer />
         </section>
     )
 }
