@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import MainLayout from "./layouts/MainLayout";
-import Home from "./pages/Home";
+import HomePage from "./pages/HomePage";
 
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainLayout />}>
-            <Route index element={<Home />} />
+            <Route index element={<HomePage />} />
           </Route>
           {/* <Route path="*" element={<NotFoundPage />} /> */}
         </Routes>

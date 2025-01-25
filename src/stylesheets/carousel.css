@@ -24,9 +24,15 @@
     animation-delay: calc((10s / 7) * (var(--POSITION) - 1));
 }
 
+.slider:hover {
+    .slider_item {
+        animation-play-state: paused;
+    }
+}
 .slider .slider_list .slider_item img {
     width: 100%;
 }
+
 
 @keyframes slider {
     from {

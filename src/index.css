@@ -30,11 +30,14 @@ body {
     overflow-x: hidden;
 }
 
-nav {
+nav section {
     background-color: rgba(0, 0, 0, 0);
-    animation: navScroll forwards;
-    animation-timeline: scroll();
-    animation-range: contain 0% contain 15%;
+    animation: navScroll linear forwards;
+    
+        @supports (animation-timeline: view()) {
+            animation-timeline: view();
+            animation-range: 100vh 120vh;
+        }
 }
 
 @keyframes navScroll {
@@ -46,5 +49,12 @@ nav {
     to {
         background-color: rgba(0, 0, 0, 1);
         color: #fff;
+        box-shadow: 1px 3px 5px #fff;
+        }
+        }
+        
+        @media (min-aspect-ratio: 8/5) {
+            header .hero_div {
+                padding-top: 6rem;
     }
 }
