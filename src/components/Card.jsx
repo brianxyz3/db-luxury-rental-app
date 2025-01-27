@@ -1,7 +1,7 @@
 
-const Card = ({ title, description }) => {
+const Card = ({ title, description, style }) => {
     return (
-        <div className="bg-white h-72 lg:h-56 flex flex-col justify-around p-2 shadow-lg rounded-xl w-full duration-200 hover:-translate-y-2 cursor-default">
+        <div className={`${style} flex flex-col justify-around p-2 lg:px-5 rounded-xl w-full cursor-default`}>
             <h3 className="text-2xl font-semibold">
                 {title}
             </h3>
