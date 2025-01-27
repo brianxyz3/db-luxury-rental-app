@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        headerImg: 'url("../src/assets/images/heroImg.jpg")',
+        homePageHeaderImg: 'url("../src/assets/images/heroImg.jpg")',
+        servicePageHeaderImg: 'url("../src/assets/images/serviceImg.jpg")',
       },
     },
   },

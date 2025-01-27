@@ -3,22 +3,19 @@ import Banner from "../components/Banner";
 import FeaturesCard from "../components/FeaturesCard";
 import AboutUs from "../components/AboutUs";
 import GetStarted from "../components/GetStarted";
+import Header from "../components/Header";
 
 const Home = () => {
     return (
         <>
-            <header className="bg-headerImg bg-cover bg-right h-svh">
-                <section className="bg-white/5 w-full h-svh">
-                    <div className="w-10/12 text-center mx-auto hero_div pt-40">
-                        <div className="w-4/5 md:w-3/4 text-xl text-[rgb(14,14,215)] text_shadow md:text-3xl lg:text-5xl font-mono font-bold mx-auto">
-                            <h1 className="text-nowrap">Experience Luxury</h1>
-                            <h2>On The Road</h2>
-                            <p className="md:mt-4 mt-4 text-sm md:text-lg lg:text-xl xl:text-2xl font-thin">Discover the perfect blend of elegance and <span className="md:text-nowrap">perfomance in every journey.</span></p>
-                        </div>
-                        <button className="bg-[rgb(14,14,215)] text-sm md:text-lg px-3 py-1 rounded-xl mt-2 text-white font-bold hover:animate-bounce hover:shadow-lg focus:animate-bounce shadow-black">Get Started <ArrowCircleRightOutlined /></button>
-                    </div>
-                </section>
-            </header>
+            <Header bgImg="bg-homePageHeaderImg bg-right h-dvh">
+                <div className="w-4/5 md:w-3/4 text-xl text-[rgb(14,14,215)] text_shadow md:text-3xl lg:text-5xl font-mono font-bold mx-auto">
+                    <h1 className="text-nowrap">Experience Luxury</h1>
+                    <h2>On The Road</h2>
+                    <p className="md:mt-4 mt-4 text-sm md:text-lg lg:text-xl xl:text-2xl font-thin">Discover the perfect blend of elegance and <span className="md:text-nowrap">perfomance in every journey.</span></p>
+                </div>
+                <button className="bg-[rgb(14,14,215)] text-sm md:text-lg px-3 py-1 rounded-xl mt-2 text-white font-bold hover:animate-bounce hover:shadow-lg focus:animate-bounce shadow-black">Get Started <ArrowCircleRightOutlined /></button>
+            </Header>
             <Banner />
             <main>
                 <section className="font-mono flex flex-wrap justify-center gap-8 sm:gap-4 mx-4 sm:mx-8">

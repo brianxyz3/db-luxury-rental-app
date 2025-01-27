@@ -50,7 +50,12 @@ const Navbar = () => {
                     <div className={"w-full flex justify-center"}>
                         <div className="flex justify-center h-3/4 mx-6 items-baseline text-center border-1 md:border-none py-3 md:gap-8  absolute md:static top-12 left-0 flex-col md:flex-row w-full md:w-full">
                             {navItems.map((item, idx) => (
-                                <Link to={`/${item.link}`} key={idx} className={`text-lg font-semibold hover:shadow-xl shadow-white md:border-b-2 md:border-[#1009a0] hover:border-white [#112152] md:hover:-mt-1 whitespace-nowrap hover:cursor-pointer duration-300 ${showNavBar && "border border-white px-5 hover:translate-x-4 py-3"}`}>{item.title}</Link>
+                                <Link to={`/${item.link}`} key={idx}
+                                    className={`text-lg font-semibold hover:shadow-xl shadow-white md:border-b-2 md:border-[#1009a0] hover:border-white [#112152] md:hover:-mt-1 whitespace-nowrap hover:cursor-pointer duration-300 ${showNavBar && "border border-white px-5 hover:translate-x-4 py-3"}`}
+                                    onClick={showNavBar && toggleNavBar}
+                                >
+                                    {item.title}
+                                </Link>
                             ))}
                         </div>
                     </div>

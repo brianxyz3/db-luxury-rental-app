@@ -65,7 +65,7 @@ const Footer = () => {
                     <div>
                         <h5 className="text-xl mb-3  md:text-2xl">Site Map</h5>
                         <div className="flex flex-col gap-3 text-sm md:text-base">
-                            <Link to="/home" className="hover:text-white">Home</Link>
+                            <Link to="/" className="hover:text-white">Home</Link>
                             <Link to="/services" className="hover:text-white">Services</Link>
                             <Link to="/about" className="hover:text-white">About Us</Link>
                         </div>
