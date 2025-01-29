@@ -45,19 +45,23 @@ const ServicesPage = () => {
     const images = [
         {
             src: "../src/assets/images/heroImg.jpg",
-            altText: ""
+            altText: "",
+            id: "image1"
         },
         {
             src: "../src/assets/images/altHeroImg.jpg",
-            altText: ""
+            altText: "",
+            id: "image2"
         },
         {
             src: "../src/assets/images/chauffeurImg.jpg",
-            altText: ""
+            altText: "",
+            id: "image3"
         },
         {
             src: "../src/assets/images/featuresImg1.jpg",
-            altText: ""
+            altText: "",
+            id: "image4"
         },
     ];
 
@@ -83,9 +87,14 @@ const ServicesPage = () => {
                     <Carousel>
                         {
                             images.map((image, idx) => (
-                                <img key={idx} src={image.src} alt={image.altText} />
+                                <img key={idx} id={image.id} src={image.src} alt={image.altText} />
                             ))
                         }
+                        <div className="carousel_nav">
+                            {images.map((image, idx) => (
+                                <a href={`#${image.id}`} key={idx}></a>
+                            ))}
+                        </div>
                     </Carousel>
 
                     <div className="md:w-[27%] w-4/5 flex flex-col gap-5">

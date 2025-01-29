@@ -1,24 +1,51 @@
 .wrapper {
-    height: var(--WIDTH);
-    width: var(--HEIGHT);
+    height: var(--HEIGHT);
+        width: var(--WIDTH);
     box-shadow: 0 5px 5px #000;
 }
 
+
 .wrapper .carousel {
     display: flex;
-    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        overflow-x: auto;
 }
 
 .wrapper .carousel_btn {
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
 }
 
 .carousel img {
-    height: var(--WIDTH);
-    width: var(--HEIGHT);
+    flex: 1 0 100%;
+        height: var(--HEIGHT);
+        scroll-snap-align: start;
     object-fit: cover;
     cursor: pointer;
+}
+.wrapper .carousel_nav {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+    z-index: 1;
+}
+
+.wrapper .carousel_nav a {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.wrapper .carousel_nav a:hover {
+    opacity: 1;
 }
 @media screen and (min-width: 1024px) {
     .wrapper {
