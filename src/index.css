@@ -30,6 +30,9 @@ body {
     overflow-x: hidden;
     background-color: #d6d7d9;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 /* d4d9df */
 
 nav section {
@@ -45,7 +48,7 @@ nav section {
 @keyframes navScroll {
     from {
         background-color: rgba(0, 0, 0, 0);
-        color: #000;
+        color: #fff;
     }
 
     to {
