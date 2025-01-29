@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useNavigate } from "react-router";
 import { Link } from "react-router";
 
 const Navbar = () => {
     // const [screenWidth, setScreenWith] = useState(window.visualViewport.width)
     const [showNavBar, setShowNavBar] = useState(false);
+    const navigate = useNavigate();
 
     const toggleNavBar = () => {
         window.document.body.classList.toggle("disable_scroll");
@@ -52,7 +54,14 @@ const Navbar = () => {
                             {navItems.map((item, idx) => (
                                 <Link to={`/${item.link}`} key={idx}
                                     className={`text-lg font-semibold hover:shadow-xl shadow-white md:border-b-2 md:border-[#1009a0] hover:border-white [#112152] md:hover:-mt-1 whitespace-nowrap hover:cursor-pointer duration-300 ${showNavBar && "border border-white px-5 hover:translate-x-4 py-3"}`}
-                                    onClick={showNavBar && toggleNavBar}
+                                    onClick={
+                                        (evt) => {
+                                            evt.stopPropagation();
+                                            if (showNavBar) {
+                                                toggleNavBar()
+                                            }
+                                        }
+                                    }
                                 >
                                     {item.title}
                                 </Link>
@@ -62,7 +71,8 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                    <button className={`duration-500 flex p-1 size-8 justify-center items-center md:hidden text-white bg-[rgb(14,14,215)] hover:hover:bg-blue-600 border border-transparent rounded-md hover:border-white ${showNavBar ? "rotate-180" : "-rotate-180"}`} onClick={toggleNavBar}>
+                    <button className={`duration-500 flex p-1 size-8 justify-center items-center md:hidden text-white bg-[rgb(14,14,215)] hover:hover:bg-blue-600 border border-transparent rounded-md hover:border-white ${showNavBar ? "rotate-180" : "-rotate-180"}`}
+                        onClick={toggleNavBar}>
                         <div className={`w-full flex flex-col ${showNavBar ? "mr-1" : "gap-1"}`}>
                             <div className={`w-6 h-1 bg-white rounded-lg ${showNavBar && "w-7 -rotate-45 origin-center"}`}></div>
                             <div className={`w-6 h-1 bg-white rounded-lg ${showNavBar && "w-7 rotate-45 origin-center -mt-1"}`}></div>
