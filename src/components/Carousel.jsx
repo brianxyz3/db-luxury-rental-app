@@ -41,7 +41,7 @@ const Carousel = ({ children }) => {
     useEffect(function () {
         const timer = new Timer(function () {
             if (window.location.pathname === "/services") {
-                if (carousel.current.scrollLeft < ((carousel.current.clientWidth * 3) - 2)) {
+                if (carousel.current.scrollLeft < ((carousel.current.clientWidth * 15) - 2)) {
                     nextImg();
                 } else {
                     carousel.current.scrollLeft = 0

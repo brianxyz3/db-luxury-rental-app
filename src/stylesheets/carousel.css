@@ -1,7 +1,7 @@
 .wrapper {
     height: var(--HEIGHT);
         width: var(--WIDTH);
-    box-shadow: 0 5px 5px #000;
+    box-shadow: 0 1px 5px #000;
 }
 
 
@@ -23,21 +23,26 @@
         height: var(--HEIGHT);
         scroll-snap-align: start;
     object-fit: cover;
+    object-position: bottom;
     cursor: pointer;
+}
+.carousel #image5 {
+    object-position: center;
 }
 .wrapper .carousel_nav {
     position: absolute;
+    overflow-x: scroll;
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
     z-index: 1;
 }
 
 .wrapper .carousel_nav a {
-    width: 0.7rem;
-    height: 0.7rem;
+    width: 0.5rem;
+        height: 0.5rem;
     border-radius: 50%;
     background-color: #fff;
     opacity: 0.75;
