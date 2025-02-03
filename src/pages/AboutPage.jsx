@@ -1,45 +1,8 @@
 import Card from "../components/Card";
 import Header from "../components/Header";
+import { firstAboutColumn, secondAboutColumn } from "../pageData";
 
 const AboutPage = () => {
-    const firstAboutColumn = [
-        {
-            title: "Experience the Pinnacle of Luxury on the Road",
-            description: "Welcome to DB Car Hire, where sophistication meets the open road. We specialize in delivering unparalleled driving experiences through our exclusive collection of luxury vehicles. Whether you’re looking to make a grand entrance, elevate your travels, or turn an ordinary day into an extraordinary adventure, our premium fleet is at your service.",
-        },
-        {
-            title: "Our Fleet",
-            description: "Are you looking for the elegance of a sleek sports car, the power of a luxury SUV, or the refined sophistication of a high-end sedan, our curated fleet includes the latest models from the world’s most prestigious brands, such as Rolls Royce, Porsche, Bentley, Mercedes Benz, Range Rover amongst others. Each vehicle is meticulously maintained, ensuring you enjoy a flawless driving experience every time you hit the road.",
-        },
-        {
-            title: "Perfect for Every Occasion",
-            description: "Whether you’re attending a high-profile event, planning a weekend getaway, or simply treating yourself to an unforgettable ride, our luxury car rentals are perfect for any occasion. Experience the prestige of driving a vehicle that reflects your success and style.",
-        },
-    ];
-
-    const secondAboutColumn = [
-        {
-            title: "Convenience and Flexibility",
-            description: "Whether it's a day, a week, or longer, we accommodate your schedule with flexible rental terms and easy booking options.",
-        },
-        {
-            title: "Tailored to You",
-            description: "At DB Car Hire, we understand that luxury is in the details. That's why we offer a personalized service to cater to your specific needs. From choosing the perfect car to arranging premium concierge services, we go above and beyond to ensure your experience is seamless, memorable, and luxurious from start to finish.",
-        },
-        {
-            title: "",
-            description: "Luxury is more than a destination—it’s the way you travel. We’re committed to delivering a first-class experience from start to finish. Explore our fleet and reserve your dream car today.",
-        },
-        {
-            title: "Unmatched Comfort",
-            description: "Step into a world of sophistication, with plush interiors, cutting-edge technology, and bespoke features designed to make every drive unforgettable.",
-        },
-        {
-            title: "Book Your Luxury Drive Today",
-            description: "Your journey to exceptional begins here. Explore our fleet, select your dream car, and reserve it in just a few clicks. At DB Car Hire, we redefine what it means to drive in style.",
-        },
-    ];
-
     return (
         <>
             <h1 className="text-5xl text-center mt-20 mb-10">About Us</h1>

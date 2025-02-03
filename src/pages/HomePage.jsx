@@ -14,7 +14,7 @@ const HomePage = () => {
                     <h2>On The Road</h2>
                     <p className="md:mt-4 mt-4 text-sm md:text-lg lg:text-xl xl:text-2xl font-thin">Discover the perfect blend of elegance and <span className="md:text-nowrap">perfomance in every drive.</span></p>
                 </div>
-                <button className="bg-[rgb(14,14,215)] text-sm md:text-lg px-3 py-1 rounded-xl mt-2 text-white font-bold hover:animate-bounce hover:shadow-lg focus:animate-bounce shadow-black">Get Started <ArrowCircleRightOutlined /></button>
+                <a href="" target="_blank" rel="noopener" className="bg-[rgb(14,14,215)] text-sm md:text-lg px-3 py-1 rounded-xl mt-2 text-white font-bold hover:animate-bounce hover:shadow-lg focus:animate-bounce shadow-black">Rent A Ride <ArrowCircleRightOutlined /></a>
             </Header>
             <Banner />
             <main>

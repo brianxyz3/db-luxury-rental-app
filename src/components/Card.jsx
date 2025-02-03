@@ -5,7 +5,7 @@ const Card = ({ title, description, style }) => {
             <h3 className="text-xl md:text-2xl font-semibold">
                 {title}
             </h3>
-            <div className="text-sm md:text-base">
+            <div className="text-sm md:text-base text-gray-800">
                 {description}
             </div>
         </div>
