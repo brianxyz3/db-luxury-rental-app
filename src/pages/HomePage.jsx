@@ -8,13 +8,13 @@ import Header from "../components/Header";
 const HomePage = () => {
     return (
         <>
-            <Header bgImg="bg-homePageHeaderImg bg-right h-dvh">
+            <Header bgImg="bg-homePageHeaderImg bg-center md:bg-top h-dvh">
                 <div className="w-4/5 md:w-3/4 text-xl text-[rgb(14,14,215)] text_shadow md:text-3xl lg:text-5xl font-mono font-bold mx-auto">
                     <h1 className="text-nowrap">Experience Luxury</h1>
                     <h2>On The Road</h2>
                     <p className="md:mt-4 mt-4 text-sm md:text-lg lg:text-xl xl:text-2xl font-thin">Discover the perfect blend of elegance and <span className="md:text-nowrap">perfomance in every drive.</span></p>
                 </div>
-                <a href="" target="_blank" rel="noopener" className="bg-[rgb(14,14,215)] text-sm md:text-lg px-3 py-1 rounded-xl mt-2 text-white font-bold hover:animate-bounce hover:shadow-lg focus:animate-bounce shadow-black">Rent A Ride <ArrowCircleRightOutlined /></a>
+                <a href="" target="_blank" rel="noopener" className="bg-[rgb(14,14,215)] flex items-center gap-1 text-sm md:text-lg px-3 py-1 rounded-xl mt-2 text-white font-bold hover:animate-bounce hover:shadow-lg focus:animate-bounce shadow-black">Rent A Ride <ArrowCircleRightOutlined /></a>
             </Header>
             <Banner />
             <main>
@@ -48,8 +48,8 @@ const HomePage = () => {
                     </div>
                     <div className="w-full flex justify-end">
                         <FeaturesCard
-                            img="../src/assets/images/altHeroImg.jpg"
-                            imgAltText="a photo of a sports car driving down a long, open, winding country road"
+                            img="../src/assets/images/heroImg.jpg"
+                            imgAltText="a photo of a sports car driving down a long, open country road"
                             description="Enjoy the comfort and prestige of a luxury vehicle on your terms. Our long-term rental options combine flexibility and exclusivity for those who value extended elegance."
                         >
                             <h3 className="text-2xl px-2 font-bold">Luxury for the Long Haul</h3>

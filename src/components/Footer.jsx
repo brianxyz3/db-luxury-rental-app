@@ -5,7 +5,7 @@ import Copyright from "./Copyright";
 
 const Footer = () => {
     return (
-        <footer className="bg-black font-mono text-indigo-200 px-6 mt-14 md:px-8">
+        <footer className="bg-black font-mono text-indigo-200 px-6 md:px-8">
             <div className="flex flex-wrap justify-center gap-6 py-6 md:flex-nowrap md:justify-between">
                 <div className="w-64 text-xs md:w-72 md:text-sm">
                     <h5 className="text-xl mb-3 md:text-2xl"><span className="p-1 border rounded-md border-blue-900">DB</span> Car Hire</h5>

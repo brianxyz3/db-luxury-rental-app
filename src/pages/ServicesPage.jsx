@@ -15,7 +15,7 @@ const ServicesPage = () => {
                     <p className="text-xs md:text-base lg:text-lg xl:text-xl mt-5 landscape:mt-2 md:landscape:mt-8">Experience the ease of booking premium vehicles. Browse, book, and hit the road in style. Whether it’s a business trip, a special event, or a weekend getaway, we make luxury travel effortless and affordable.</p>
                 </div>
             </Header>
-            <main className="mt-20">
+            <main className="my-20">
                 <section className="flex justify-evenly items-center flex-wrap flex-grow md:items-start md:flex-nowrap gap-4 md:gap-0">
                     <div className="md:w-[27%] w-3/4 flex flex-col gap-3">
                         {firstServiceColumn.map((card, idx) => (
@@ -27,7 +27,7 @@ const ServicesPage = () => {
                     <Carousel>
                         {
                             servicePageImages.map((image, idx) => (
-                                <img key={idx} id={`image${idx}`} src={image.src} alt={image.altText} />
+                                <img key={idx} id={`image${idx}`} src={image.src} alt={image.altText} loading="lazy" />
                             ))
                         }
                         <div className="carousel_nav">

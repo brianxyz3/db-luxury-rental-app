@@ -3,6 +3,7 @@ import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/HomePage";
 import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
             <Route index element={<HomePage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Route>
           {/* <Route path="*" element={<NotFoundPage />} /> */}
         </Routes>

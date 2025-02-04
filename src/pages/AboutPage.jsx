@@ -12,7 +12,7 @@ const AboutPage = () => {
                     <p className="text-sm md:text-base lg:text-lg xl:text-xl">About DB Car Hire, Your Trusted Partner in Luxury Car Rentals and Travel Planning. DB Car Hire is a premier car rental service specializing in providing exceptional vehicles and personalized experiences. Our team of dedicated professionals is committed to delivering seamless, reliable, and luxurious transportation solutions for every occasion. We pride ourselves on offering a carefully curated fleet of premium cars, seamless booking technology, and outstanding customer service. You need a car for business travel, special events, or leisure, we have the expertise, resources, and commitment to ensure your journey is as smooth and enjoyable as possible. Let us redefine the way you travel.</p>
                 </div>
             </Header>
-            <main className="mt-24">
+            <main className="my-20">
                 <section className="flex justify-evenly items-center flex-col flex-grow md:items-start md:flex-row gap-4 md:gap-0">
                     <div className="order-2 md:order-1 md:w-[35%] w-80 flex flex-col gap-2 px-4">
                         {firstAboutColumn.map((card, idx) => (

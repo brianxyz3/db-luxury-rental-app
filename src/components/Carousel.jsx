@@ -32,10 +32,10 @@ const Carousel = ({ children }) => {
             return this;
         }
 
-        this.reset = function (newTime = time) {
-            time = newTime;
-            return this.stop().start();
-        }
+        // this.reset = function (newTime = time) {
+        //     time = newTime;
+        //     return this.stop().start();
+        // }
     }
 
     useEffect(function () {
