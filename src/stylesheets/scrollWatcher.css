@@ -1,0 +1,75 @@
+.scroll_watcher_btn {
+    animation: showScrollWatcher linear forwards;
+
+    @supports (animation-timeline: view()) {
+        animation-timeline: view();
+        animation-range: 0vh 100vh;
+    }
+}
+
+@keyframes showScrollWatcher {
+    from {
+        opacity: 0;
+        scale: 0.3;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.scroll_watcher {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    color: antiquewhite;
+    background-color: black;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.scroll_watcher::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: inherit;
+    background: conic-gradient(antiquewhite var(--fill), transparent var(--fill));
+    animation: scrollWatcher linear;
+
+    @supports (animation-timeline: scroll(root)) {
+        animation-timeline: scroll(root);
+    }
+}
+
+@property --fill {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 0%;
+}
+
+@keyframes scrollWatcher {
+
+    to {
+        --fill: 100%
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .scroll_watcher {
+        width: 44px;
+        height: 44px;
+    }
+
+    .scroll_watcher::after {
+        width: 40px;
+        height: 40px;
+    }
+}
