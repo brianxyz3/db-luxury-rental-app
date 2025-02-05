@@ -21,6 +21,7 @@ const HomePage = () => {
                 <section className="font-mono flex flex-wrap justify-center gap-8 sm:gap-4 mx-4 sm:mx-8">
                     <div className="w-full flex justify-start">
                         <FeaturesCard
+                            showAnimation="auto_show_left"
                             img="../src/assets/images/featuresImg1.jpg"
                             imgAltText="a photo of a man's hand on the steering wheel of a mercedes benz"
                             description="Choose from our exclusive fleet of world-class luxury vehicles. From sleek sports cars to sophisticated sedans and SUVs, each car is meticulously maintained to provide an unparalleled driving experience for any occasion."
@@ -30,6 +31,7 @@ const HomePage = () => {
                     </div>
                     <div className="w-full flex justify-end">
                         <FeaturesCard
+                            showAnimation="auto_show_right"
                             img="../src/assets/images/chauffeurImg.jpg"
                             imgAltText="a photo of an african male dressed in a suit using his mobile phone in the backseat of a luxury vehicle"
                             description="Relax and enjoy the journey with our professional chauffeur services. Whether for business meetings, special events, or airport transfers, our experienced drivers ensure a seamless, first-class experience."
@@ -39,6 +41,7 @@ const HomePage = () => {
                     </div>
                     <div className="w-full flex justify-start">
                         <FeaturesCard
+                            showAnimation="auto_show_left"
                             img="../src/assets/images/weddingCarImg2.jpg"
                             imgAltText="a photo of a white rolls royce parked in front of a building"
                             description="Make your special day even more magical with a luxurious wedding car. From timeless classics to modern marvels, we've got the right car tailor-made for the occassion. We’ll help you arrive in style."
@@ -48,6 +51,7 @@ const HomePage = () => {
                     </div>
                     <div className="w-full flex justify-end">
                         <FeaturesCard
+                            showAnimation="auto_show_right"
                             img="../src/assets/images/heroImg.jpg"
                             imgAltText="a photo of a sports car driving down a long, open country road"
                             description="Enjoy the comfort and prestige of a luxury vehicle on your terms. Our long-term rental options combine flexibility and exclusivity for those who value extended elegance."

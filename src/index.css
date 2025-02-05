@@ -26,6 +26,9 @@ img {
 }
 
 /* General style */
+html {
+    scroll-behavior: smooth;
+}
 body {
     overflow-x: hidden;
     background-color: #d6d7d9;
@@ -33,18 +36,20 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
-/* d4d9df */
 
 nav section {
-    background-color: rgba(0, 0, 0, 0);
     animation: navScroll linear forwards;
     
         @supports (animation-timeline: view()) {
             animation-timeline: view();
-            animation-range: 100vh 120vh;
+            animation-range: 100vh 115vh;
         }
 }
 
+nav section .logo:hover {
+    scale: 1.2;
+    transition: scale 0.5s ease-in-out;
+}
 @keyframes navScroll {
     from {
         background-color: rgba(0, 0, 0, 0);
@@ -58,8 +63,68 @@ nav section {
         }
         }
         
-        @media (min-aspect-ratio: 8/5) {
-            header .hero_div {
-                padding-top: 6rem;
+.auto_show_center {
+    animation: autoShowCenter both;
+
+    @supports (animation-timeline: view()) {
+        animation-timeline: view(80% 5%);
+    }
+}
+
+@keyframes autoShowCenter {
+    from {
+        transform: translateY(50%);
+        scale: 0.3;
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.auto_show_left {
+    animation: autoShowLeft both;
+
+    @supports (animation-timeline: view()) {
+        animation-timeline: view(80% 5%);
+    }
+}
+
+@keyframes autoShowLeft {
+    from {
+        transform: translateX(-50%);
+        scale: 0.5;
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.auto_show_right {
+    animation: autoShowRight both;
+
+    @supports (animation-timeline: view()) {
+        animation-timeline: view(80% 5%);
+    }
+}
+
+@keyframes autoShowRight {
+    from {
+        transform: translateX(50%);
+        scale: 0.5;
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        scale: 1;
+        opacity: 1;
     }
 }

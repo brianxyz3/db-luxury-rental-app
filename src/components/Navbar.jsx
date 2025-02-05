@@ -45,9 +45,12 @@ const Navbar = () => {
 
 
     return (
-        <nav id="top" className={`${showNavBar && "black_gradient text-white h-svh md:text-black md:h-auto md:bg-none"} w-full fixed top-0 z-10 sm:px-8 px-2 pb-2 pt-2`}>
+        <nav className={`${showNavBar && "black_gradient text-white h-svh md:text-black md:h-auto md:bg-none"} w-full fixed top-0 z-10 sm:px-8 px-2 pb-2 pt-2`}>
             <section className="flex justify-between p-3 md:p-1 rounded-2xl md:items-center h-full">
-                <div className="text-2xl font-bold font-sans text-blue-800"><Link to="/"><span className="text-blue-300 bg-black p-1 border rounded-md md:ms-6 border-blue-900">DB</span></Link></div>
+                <div className="flex items-center gap-2 h-8 text-nowrap font-semibold">
+                    <div className="logo text-2xl font-bold font-sans text-blue-800"><Link to="/"><span className="logo_text text-blue-300 bg-black p-1 border rounded-md md:ms-6 border-blue-900 hover:border-2 duration-500">DB</span></Link></div>
+                    <p className={`${!showNavBar && "opacity-0 md:opacity-100"}`}>Car Hire</p>
+                </div>
                 <div className={`${showNavBar ? "opacity-100" : "h-0 opacity-0 hidden"} duration-300 md:opacity-100 md:h-fit md:flex md:justify-evenly md:w-11/12`}>
                     <div className={"w-full flex justify-center"}>
                         <div className="flex justify-center h-3/4 mx-6 items-baseline text-center border-1 md:border-none py-3 md:gap-8  absolute md:static top-12 left-0 flex-col md:flex-row w-full md:w-full">
