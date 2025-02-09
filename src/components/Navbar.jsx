@@ -51,7 +51,7 @@ const Navbar = () => {
                     <Link to="/"><img src="../src/assets/images/db_car_hire_logo.png" alt="db car hire logo" className="h-12 w-14 bg-black border rounded-md md:ms-5 border-yellow-600 hover:border-2 duration-500 md:h-[3.5rem] md:w-[4.5rem]" /></Link>
                     <p className={`${!showNavBar && "opacity-0 md:opacity-100"} font-serif`}>Car Hire</p>
                 </div>
-                <div className={`${showNavBar ? "opacity-100 -translate-x-52" : "h-0 opacity-0 scale-0 translate-x-72 md:scale-100"} md:translate-x-0 duration-150 md:opacity-100 md:h-fit md:flex md:justify-evenly md:w-11/12`}>
+                <div className={`${showNavBar ? "opacity-100 -translate-x-52" : "h-0 opacity-0 translate-x-72 md:scale-100"} md:translate-x-0 duration-100 md:opacity-100 md:h-fit md:flex md:justify-evenly md:w-11/12`}>
                     <div className={"w-full flex justify-between"}>
                         <div className="flex justify-center h-3/4 mx-6 items-baseline text-center border-1 md:border-none py-3 md:gap-8  absolute md:static top-12 left-0 flex-col md:flex-row w-full md:w-full">
                             {navItems.map((item, idx) => (
