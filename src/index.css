@@ -33,6 +33,13 @@ body {
     overflow-x: hidden;
     background-color: #d6d7d9;
 }
+h1 {
+    z-index: 1;
+}
+
+header {
+    z-index: -1;
+}
 ::-webkit-scrollbar {
     display: none;
 }
