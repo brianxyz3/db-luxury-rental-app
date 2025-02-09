@@ -10,7 +10,7 @@
 @keyframes showScrollWatcher {
     from {
         opacity: 0;
-        scale: 0.3;
+        scale: 0;
     }
 
     to {

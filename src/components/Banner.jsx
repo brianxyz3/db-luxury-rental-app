@@ -4,30 +4,37 @@ const Banner = () => {
     const carouselItems = [
         {
             src: "../src/assets/images/bentleyLogoImg.svg",
+            altText: "image of bentley logo",
             position: 1,
         },
         {
             src: "../src/assets/images/rollsRoyceLogoImg.svg",
+            altText: "image of rolls royce logo", 
             position: 2,
         },
         {
             src: "../src/assets/images/toyotaLogoImg.svg",
+            altText: "image of toyota logo", 
             position: 3,
         },
         {
             src: "../src/assets/images/mercedesLogoImg.svg",
+            altText: "image of mercedes logo", 
             position: 4,
         },
         {
             src: "../src/assets/images/hiluxLogoImg.svg",
+            altText: "image of hilux logo", 
             position: 5,
         },
         {
             src: "../src/assets/images/lexusLogoImg.svg",
+            altText: "image of lexus logo", 
             position: 6,
         },
         {
             src: "../src/assets/images/rangeRoverLogoImg.svg",
+            altText: "image of range rover logo", 
             position: 7,
         },
     ];

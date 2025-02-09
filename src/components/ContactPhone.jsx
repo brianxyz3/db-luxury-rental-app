@@ -22,10 +22,10 @@ const ContactPhone = () => {
                     <div className="main_screen flex flex-wrap items-end relative w-full">
                         <iframe className="z-1 top-2 rounded-xl absolute w-full h-2/3" src=" https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3971.2357566091378!2d5.7393139734977705!3d5.532005333893614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMzEnNTUuMiJOIDXCsDQ0JzMwLjgiRQ!5e0!3m2!1sen!2sng!4v1738581954759!5m2!1sen!2sng" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe >
                         <div className="flex text-indigo-200 w-full mt-72 justify-evenly">
-                            <a href="" target="_blank" rel="noopener" className="hover:-translate-y-2 hover:text-white"><Twitter fontSize="large" /></a>
-                            <a href="https://www.instagram.com/dbcarhire/?hl=en" target="_blank" rel="noopener" className="hover:-translate-y-2 hover:text-white"><Instagram fontSize="large" /></a>
-                            <a href="" target="_blank" rel="noopener" className="hover:-translate-y-2 hover:text-white"><FacebookOutlined fontSize="large" /></a>
-                            <a href="" target="_blank" rel="noopener" className="hover:-translate-y-2 hover:text-white"><WhatsApp fontSize="large" /></a>
+                            <a href="" target="_blank" rel="noopener" className="hover:-translate-y-2 hover:text-white duration-300"><Twitter fontSize="large" /></a>
+                            <a href="https://www.instagram.com/dbcarhire/?hl=en" target="_blank" rel="noopener" className="hover:-translate-y-2 hover:text-white duration-300"><Instagram fontSize="large" /></a>
+                            <a href="" target="_blank" rel="noopener" className="hover:-translate-y-2 hover:text-white duration-300"><FacebookOutlined fontSize="large" /></a>
+                            <a href="" target="_blank" rel="noopener" className="hover:-translate-y-2 hover:text-white duration-300"><WhatsApp fontSize="large" /></a>
                         </div>
                         <div className="h-1 w-2/5 mx-auto bg-black rounded-lg "></div>
                     </div>

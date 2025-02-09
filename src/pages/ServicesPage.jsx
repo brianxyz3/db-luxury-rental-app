@@ -14,8 +14,8 @@ const ServicesPage = () => {
                         <h2 className="text-lg md:text-3xl lg:text-4xl font-bold">Your Journey to Exceptional Begins Here</h2>
                     {/* Drive Your Dream, Anywhere, Anytime. */}
                         <p className=" font-semibold text-xs md:text-lg lg:text-xl xl:text-2xl mt-5 landscape:mt-2 md:landscape:mt-8">Experience the ease of booking premium vehicles. Browse, book, and hit the road in style. Whether it’s a business trip, a special event, or a weekend getaway, we make luxury travel effortless and affordable.</p>
-                </div>
-            </Header>
+                    </div>
+                </Header>
             </section>
             <main className="my-20">
                 <section className="flex justify-evenly items-center flex-wrap flex-grow md:items-start md:flex-nowrap gap-4 md:gap-0">
@@ -32,11 +32,6 @@ const ServicesPage = () => {
                                 <img key={idx} id={`image${idx}`} src={image.src} alt={image.altText} loading="lazy" />
                             ))
                         }
-                        <div className="carousel_nav">
-                            {servicePageImages.map((image, idx) => (
-                                <a href={`#image${idx}`} key={idx} className="hidden lg:block"></a>
-                            ))}
-                        </div>
                     </Carousel>
 
                     <div className="md:w-[27%] w-3/4 flex flex-col gap-3">
