@@ -4,7 +4,7 @@ export { default as bentleyLogoImg } from "./images/bentleyLogoImg.svg";
 export { default as lexusLogoImg } from "./images/lexusLogoImg.svg";
 export { default as rangeRoverLogoImg } from "./images/rangeRoverLogoImg.svg";
 export { default as rollsRoyceLogoImg } from "./images/rollsRoyceLogoImg.svg";
-export { default as mercedeslogoImg } from "./images/mercedeslogoImg.svg";
+export { default as mercedesLogoImg } from "./images/mercedesLogoImg.svg";
 export { default as toyotaLogoImg } from "./images/toyotaLogoImg.svg";
 
 export { default as aboutImg } from "./images/aboutImg.jpg";

@@ -1,5 +1,5 @@
 import "../stylesheets/banner.css";
-import { hiluxLogoImg, lexusLogoImg, toyotaLogoImg, bentleyLogoImg, rangeRoverLogoImg, rollsRoyceLogoImg, mercedeslogoImg } from "../assets/images";
+import { hiluxLogoImg, lexusLogoImg, toyotaLogoImg, bentleyLogoImg, rangeRoverLogoImg, rollsRoyceLogoImg, mercedesLogoImg } from "../assets/images";
 
 const Banner = () => {
     const carouselItems = [
@@ -19,7 +19,7 @@ const Banner = () => {
             position: 3,
         },
         {
-            src: mercedeslogoImg,
+            src: mercedesLogoImg,
             altText: "image of mercedes logo", 
             position: 4,
         },
