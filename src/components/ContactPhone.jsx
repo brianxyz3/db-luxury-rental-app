@@ -9,7 +9,7 @@ const ContactPhone = () => {
             <div className="bg-gradient-to-b from-slate-700 to-slate-900 size-full border-[0.35rem] border-t-[0.5rem] rounded-[1.8rem] border-black">
                 <div className="relative phone_screen size-full border-x border-b rounded-[1.4rem] border-gray-400">
                     <div className="flex justify-around items-center px-2">
-                        <div className="text-xs text-center w-1/6 flex flex-nowrap gap-1">
+                        <div className="text-[0.6rem] text-center w-1/6 flex flex-nowrap gap-1">
                             <p>{time[0]}</p>
                             <p>{time[1]}</p>
                         </div>

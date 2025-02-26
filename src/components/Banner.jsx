@@ -1,39 +1,40 @@
 import "../stylesheets/banner.css";
+import { hiluxLogoImg, lexusLogoImg, toyotaLogoImg, bentleyLogoImg, rangeRoverLogoImg, rollsRoyceLogoImg, mercedeslogoImg } from "../assets/images";
 
 const Banner = () => {
     const carouselItems = [
         {
-            src: "../src/assets/images/bentleyLogoImg.svg",
+            src: bentleyLogoImg,
             altText: "image of bentley logo",
             position: 1,
         },
         {
-            src: "../src/assets/images/rollsRoyceLogoImg.svg",
+            src: rollsRoyceLogoImg,
             altText: "image of rolls royce logo", 
             position: 2,
         },
         {
-            src: "../src/assets/images/toyotaLogoImg.svg",
+            src: toyotaLogoImg,
             altText: "image of toyota logo", 
             position: 3,
         },
         {
-            src: "../src/assets/images/mercedesLogoImg.svg",
+            src: mercedeslogoImg,
             altText: "image of mercedes logo", 
             position: 4,
         },
         {
-            src: "../src/assets/images/hiluxLogoImg.svg",
+            src: hiluxLogoImg,
             altText: "image of hilux logo", 
             position: 5,
         },
         {
-            src: "../src/assets/images/lexusLogoImg.svg",
+            src: lexusLogoImg,
             altText: "image of lexus logo", 
             position: 6,
         },
         {
-            src: "../src/assets/images/rangeRoverLogoImg.svg",
+            src: rangeRoverLogoImg,
             altText: "image of range rover logo", 
             position: 7,
         },

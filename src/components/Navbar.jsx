@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { Link } from "react-router";
+import { dbCarHireNavLogo } from "../assets/images";
 
 const Navbar = () => {
     // const [screenWidth, setScreenWith] = useState(window.visualViewport.width)
@@ -48,8 +49,7 @@ const Navbar = () => {
         <nav className={`${showNavBar && "black_gradient text-white h-dvh md:text-black md:h-auto md:bg-none"} w-full fixed top-0 z-10 sm:px-8 px-2 pb-2 pt-2`}>
             <section className="flex justify-between p-3 md:p-1 rounded-2xl md:items-center h-full">
                 <div className="flex items-center gap-6 lg:gap-4 h-8 text-nowrap font-semibold">
-                    <Link to="/"><img src="../src/assets/images/db_car_hire_logo.png" alt="db car hire logo" className="h-12 w-14 bg-black border rounded-md md:ms-5 border-yellow-600 hover:border-2 duration-500 md:h-[3.5rem] md:w-[4.5rem]" /></Link>
-                    <p className={`${!showNavBar && "opacity-0 md:opacity-100"} font-serif`}>Car Hire</p>
+                    <Link to="/"><img src={dbCarHireNavLogo} alt="db car hire logo" className="h-12 w-14 bg-black border rounded-md md:ms-5 border-yellow-600 hover:border-2 duration-500 md:h-[3.5rem] md:w-[4.5rem]" /></Link>
                 </div>
                 <div className={`${showNavBar ? "opacity-100 -translate-x-52" : "h-0 opacity-0 translate-x-72 md:scale-100"} md:translate-x-0 duration-100 md:opacity-100 md:h-fit md:flex md:justify-evenly md:w-11/12`}>
                     <div className={"w-full flex justify-between"}>

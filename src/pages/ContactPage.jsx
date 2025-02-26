@@ -6,7 +6,7 @@ const ContactPage = () => {
 
     return (
         <>
-            <section className="bg-contactPageHeaderImg bg-cover flex items-center justify-center text-center mt-20 overflow-x-hidden md:h-dvh">
+            <section className="bgContactPageHeaderImg bg-cover flex items-center justify-center text-center mt-20 overflow-x-hidden md:h-dvh">
                 <div className="py-20 text-white text-xl flex items-center justify-center flex-wrap gap-12 md:gap-0 md:flex-nowrap">
                     <div className="min-w-60 md:text-right md:h-96">
                         <div className="bg-black/70 p-2.5 rounded-2xl rotate-6 relative">

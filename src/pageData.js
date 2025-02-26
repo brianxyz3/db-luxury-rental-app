@@ -1,3 +1,22 @@
+import {
+  carFleetImg1,
+  hiluxImg1,
+  landcruiserImg1,
+  landcruiserImg2,
+  landcruiserImg3,
+  lexusImg1,
+  lexusImg2,
+  lexusImg3,
+  lexusImg4,
+  mercedesImg1,
+  mercedesImg2,
+  pradoImg1,
+  rangeRoverImg1,
+  rollsRoyceImg1,
+  toyotaBusImg1,
+  toyotaImg1,
+} from "./assets/images";
+
 export const firstAboutColumn = [
   {
     title: "Experience the Pinnacle of Luxury on the Road",
@@ -92,80 +111,80 @@ export const secondServiceColumn = [
 
 export const servicePageImages = [
   {
-    src: "../src/assets/images/toyotaImg1.jpg",
+    src: toyotaImg1,
     altText:
       "a photo of a black bulletproof suv, toyota land cruiser jeep 2022 model owned by DB car hire",
   },
   {
-    src: "../src/assets/images/lexusImg2.jpg",
+    src: lexusImg2,
     altText:
       "a photo of a black suv, lexus gx 460 2022 model owned by DB car hire",
   },
   {
-    src: "../src/assets/images/landcruiserImg2.jpg",
+    src: landcruiserImg2,
     altText:
       "a photo of a black suv, toyota prado jeep 2021 model owned by DB car hire",
   },
   {
-    src: "../src/assets/images/landcruiserImg3.jpg",
+    src: landcruiserImg3,
     altText:
       "a photo of a black suv, toyota prado jeep 2021 model owned by DB car hire",
   },
   {
-    src: "../src/assets/images/rollsRoyceImg1.jpg",
+    src: rollsRoyceImg1,
     altText: "a photo of a black rolls royce owned by DB car hire",
   },
   {
-    src: "../src/assets/images/pradoImg1.jpg",
+    src: pradoImg1,
     altText:
       "a photo of a black suv, toyota prado jeep 2020 model owned by DB car hire",
   },
   {
-    src: "../src/assets/images/landcruiserImg1.jpg",
+    src: landcruiserImg1,
     altText:
       "a photo of a black suv, toyota land cruiser 2020 model owned by DB car hire",
   },
   {
-    src: "../src/assets/images/toyotaBusImg1.jpg",
+    src: toyotaBusImg1,
     altText: "a photo of a white toyota coaster bus owned by DB car hire",
   },
   {
-    src: "../src/assets/images/lexusImg1.jpg",
+    src: lexusImg1,
     altText:
       "a photo of a white suv, lexus gx 460 2022 model owned by DB car hire",
   },
   {
-    src: "../src/assets/images/mercedesImg1.jpg",
+    src: mercedesImg1,
     altText:
       "a photo of a dark blue suv, mercedes benz gle 350 owned by DB car hire",
   },
   {
-    src: "../src/assets/images/hiluxImg1.jpg",
+    src: hiluxImg1,
     altText:
       "a photo of a white suv, toyota hilux 2022 model owned by DB car hire",
   },
   {
-    src: "../src/assets/images/lexusImg3.jpg",
+    src: lexusImg3,
     altText:
       "a photo of a black bulletproof suv, lexus lx 600 2022 model owned by DB car hire",
   },
   {
-    src: "../src/assets/images/lexusImg4.jpg",
+    src: lexusImg4,
     altText:
       "a photo of a black suv, lexus sport 2020 model owned by DB car hire",
   },
   {
-    src: "../src/assets/images/mercedesImg2.jpg",
+    src: mercedesImg2,
     altText:
       "a photo of a black suv, mercedes benz gle 350 2020 model owned by DB car hire",
   },
   {
-    src: "../src/assets/images/rangeRoverImg1.jpg",
+    src: rangeRoverImg1,
     altText:
       "a photo of a black suv, range rover autobiography owned by DB car hire",
   },
   {
-    src: "../src/assets/images/carFleetImg1.jpg",
+    src: carFleetImg1,
     altText: "a photo of several luxury black suv from DB car hire's fleet",
   },
 ];

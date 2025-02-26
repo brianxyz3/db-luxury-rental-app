@@ -40,6 +40,17 @@ h1 {
 header {
     z-index: -1;
 }
+.bgHomePageHeaderImg {
+    background-image: url("./assets/images/altHeroImg.jpg");
+}
+
+.bgServicePageHeaderImg {
+    background-image: url("./assets/images/serviceImg.jpg");
+}
+
+.bgContactPageHeaderImg {
+    background-image: url("./assets/images/tableImg.jpg");
+}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -101,13 +112,13 @@ nav section .logo:hover {
 }
 
 @keyframes autoShowLeft {
-    from {
+    0% {
         transform: translateX(-50%);
         scale: 0.5;
         opacity: 0;
     }
 
-    to {
+                                                                                                                                                                                                                                                                80% {
         transform: translateX(0%);
         scale: 1;
         opacity: 1;
@@ -123,13 +134,13 @@ nav section .logo:hover {
 }
 
 @keyframes autoShowRight {
-    from {
+    0% {
         transform: translateX(50%);
         scale: 0.5;
         opacity: 0;
     }
 
-    to {
+                                                                                                                                80% {
         transform: translateX(0%);
         scale: 1;
         opacity: 1;

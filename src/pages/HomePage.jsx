@@ -4,11 +4,12 @@ import FeaturesCard from "../components/FeaturesCard";
 import AboutUs from "../components/AboutUs";
 import GetStarted from "../components/GetStarted";
 import Header from "../components/Header";
+import { chauffeurImg, featuresImg1, heroImg, weddingCarImg2 } from "../assets/images";
 
 const HomePage = () => {
     return (
         <>
-            <Header bgImg="bg-homePageHeaderImg bg-center md:bg-top h-dvh">
+            <Header bgImg="bgHomePageHeaderImg bg-center md:bg-top h-dvh">
                 <div className="w-4/5 md:w-3/4 text-xl text-[rgb(14,14,215)] text_shadow md:text-3xl lg:text-5xl font-mono font-bold mx-auto">
                     <h1 className="text-nowrap">Experience Luxury</h1>
                     <h2>On The Road</h2>
@@ -22,7 +23,7 @@ const HomePage = () => {
                     <div className="w-full flex justify-start">
                         <FeaturesCard
                             showAnimation="auto_show_left"
-                            img="../src/assets/images/featuresImg1.jpg"
+                            img={featuresImg1}
                             imgAltText="a photo of a man's hand on the steering wheel of a mercedes benz"
                             description="Choose from our exclusive fleet of world-class luxury vehicles. From sleek sports cars to sophisticated sedans and SUVs, each car is meticulously maintained to provide an unparalleled driving experience for any occasion."
                         >
@@ -32,7 +33,7 @@ const HomePage = () => {
                     <div className="w-full flex justify-end">
                         <FeaturesCard
                             showAnimation="auto_show_right"
-                            img="../src/assets/images/chauffeurImg.jpg"
+                            img={chauffeurImg}
                             imgAltText="a photo of an african male dressed in a suit using his mobile phone in the backseat of a luxury vehicle"
                             description="Relax and enjoy the journey with our professional chauffeur services. Whether for business meetings, special events, or airport transfers, our experienced drivers ensure a seamless, first-class experience."
                         >
@@ -42,7 +43,7 @@ const HomePage = () => {
                     <div className="w-full flex justify-start">
                         <FeaturesCard
                             showAnimation="auto_show_left"
-                            img="../src/assets/images/weddingCarImg2.jpg"
+                            img={weddingCarImg2}
                             imgAltText="a photo of a white rolls royce parked in front of a building"
                             description="Make your special day even more magical with a luxurious wedding car. From timeless classics to modern marvels, we've got the right car tailor-made for the occassion. We’ll help you arrive in style."
                         >
@@ -52,7 +53,7 @@ const HomePage = () => {
                     <div className="w-full flex justify-end">
                         <FeaturesCard
                             showAnimation="auto_show_right"
-                            img="../src/assets/images/heroImg.jpg"
+                            img={heroImg}
                             imgAltText="a photo of a sports car driving down a long, open country road"
                             description="Enjoy the comfort and prestige of a luxury vehicle on your terms. Our long-term rental options combine flexibility and exclusivity for those who value extended elegance."
                         >

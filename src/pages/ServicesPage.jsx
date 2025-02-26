@@ -9,7 +9,7 @@ const ServicesPage = () => {
         <>
             <h1 className="text-5xl text-center h-1/4 pt-24">Our Services</h1>
             <section className="h-2/3 flex items-center">
-                <Header bgImg="bg-servicePageHeaderImg bg-center h-3/5 md:h-4/5 lg:h-5/6 lg:w-full">
+                <Header bgImg="bgServicePageHeaderImg bg-center h-3/5 md:h-4/5 lg:h-5/6 lg:w-full">
                     <div className="w-4/5 md:w-3/4 text-xl text-[rgb(1,50,250)] text_shadow md:text-3xl lg:text-5xl mx-auto">
                         <h2 className="text-lg md:text-3xl lg:text-4xl font-bold">Your Journey to Exceptional Begins Here</h2>
                     {/* Drive Your Dream, Anywhere, Anytime. */}

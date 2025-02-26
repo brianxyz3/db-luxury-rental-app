@@ -7,7 +7,7 @@ const AboutPage = () => {
         <>
             <h1 className="text-5xl text-center h-1/4 pt-20">About Us</h1>
             <section className="h-2/3 flex items-center">
-                <Header bgImg="bg-servicePageHeaderImg bg-center h-[85%] md:h-4/5 lg:h-5/6">
+                <Header bgImg="bgServicePageHeaderImg bg-center h-[85%] md:h-4/5 lg:h-5/6">
                     <div className="text-[rgb(1,50,250)] text_shadow  mx-auto">
                     {/* Drive Your Dream, Anywhere, Anytime. */}
                         <p className="text-xs font-semibold md:text-base lg:text-lg xl:text-xl">About DB Car Hire, Your Trusted Partner in Luxury Car Rentals and Travel Planning. DB Car Hire is a premier car rental service specializing in providing exceptional vehicles and personalized experiences. Our team of dedicated professionals is committed to delivering seamless, reliable, and luxurious transportation solutions for every occasion. We pride ourselves on offering a carefully curated fleet of premium cars, seamless booking technology, and outstanding customer service. You need a car for business travel, special events, or leisure, we have the expertise, resources, and commitment to ensure your journey is as smooth and enjoyable as possible. Let us redefine the way you travel.</p>
