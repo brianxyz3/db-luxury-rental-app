@@ -1,5 +1,5 @@
 import { KeyboardDoubleArrowUp } from "@mui/icons-material";
-import "../stylesheets/ScrollWatcher.css";
+import "../stylesheets/scrollWatcher.css";
 
 const ScrollWatcher = () => {
     return (
