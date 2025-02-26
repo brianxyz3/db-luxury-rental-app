@@ -64,18 +64,3 @@ const Banner = () => {
 
 
 export default Banner;
-
-
-
-// {
-//     carouselItems.map((item, idx) => (
-//         <img key={`${idx}-hidden`} aria-hidden="true" src={item} />
-//     ))
-// }
-
-
-<section>
-
-    <div className="flex flex-wrap ">
-    </div>
-</section>
