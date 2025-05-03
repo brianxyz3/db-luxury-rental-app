@@ -1,8 +1,27 @@
+import { useEffect } from "react";
 import Card from "../components/Card";
 import Header from "../components/Header";
 import { firstAboutColumn, secondAboutColumn } from "../pageData";
 
 const AboutPage = () => {
+
+    const options = {
+        threshold: 0.15
+    }
+    const animateObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            entry.target.classList.toggle("animate_show", entry.isIntersecting)
+            if (entry.isIntersecting) animateObserver.unobserve(entry.target);
+        })
+    }, options)
+
+    useEffect(() => {
+        document.querySelectorAll(".animate").forEach((element) => {
+            animateObserver.observe(element)
+        })
+    }, [])
+        
+
     return (
         <>
             <h1 className="text-5xl text-center h-1/4 pt-20">About Us</h1>
@@ -18,17 +37,17 @@ const AboutPage = () => {
                 <section className="flex justify-evenly items-center flex-col flex-grow md:items-start md:flex-row gap-4 md:gap-0">
                     <div className="order-2 md:order-1 md:w-[35%] w-80 flex flex-col gap-2 px-4">
                         {firstAboutColumn.map((card, idx) => (
-                            <Card key={idx} title={card.title} description={card.description} style="auto_show_left" />
+                            <Card key={idx} title={card.title} description={card.description} style="animate animate_left" />
                         ))
                         }
                     </div>
 
-                    <div className="auto_show_center order-1 md:order-2 w-3/5 bg-gradient-to-b from-black to-slate-800 text-white rounded-xl py-14 flex flex-col items-center md:w-[27%] md:sticky top-24">
+                    <div className="animate animate_center order-1 md:order-2 w-3/5 bg-gradient-to-b from-black to-slate-800 text-white rounded-xl py-14 flex flex-col items-center md:w-[27%] md:sticky top-24">
                         <div className="tracking-widest">
                             <h1 className="text-4xl font-semibold md:text-5xl mb-4">
                                 ABOUT
                             </h1>
-                            <div className="text-xs">
+                            <div className="text-xs tracking-[0.3em] font-bold">
                                 <p><span className="text-[rgb(1,50,250)]">R</span>eliable</p>
                                 <p><span className="text-[rgb(1,50,250)]">I</span>nnovative</p>
                                 <p><span className="text-[rgb(1,50,250)]">D</span>ynamic</p>
@@ -39,29 +58,29 @@ const AboutPage = () => {
 
                     <div className="order-3 md:order-3 md:w-[35%] w-80 flex flex-col gap-2 md:text-right  px-4">
                         {secondAboutColumn.map((card, idx) => (
-                            <Card key={idx} title={card.title} description={card.description} style="auto_show_right" />
+                            <Card key={idx} title={card.title} description={card.description} style="animate animate_right" />
                         ))
                         }  
                     </div>
                 </section>
                 <section className="text-center py-20 w-11/12 border-b border-gray-700 mx-auto lg:w-5/6">
-                    <div className="auto_show_center w-11/12 mx-auto lg:w-5/6">
+                    <div className="animate animate_center w-11/12 mx-auto lg:w-5/6">
                         <h2 className="text-3xl mb-3">Our Advantages</h2>
                         <p>We do our business in fast-changing environment and we are always on the edge as we strive to deliver the best products and services to our customers. We fight for the perfect performance and value every client and their requests.</p>
                     </div>
 
                     <div className="mt-8 flex flex-wrap gap-5 md:flex-nowrap">
-                        <div className="auto_show_center">
+                        <div className="animate animate_center">
                             <h3 className="text-2xl text-[rgb(1,50,250)]">10</h3>
                             <h4 className="text-xl">Business Partners</h4>
                             <p className="text-gray-800">Collaboration with other businesses is essential, and we have many proven partners.</p>
                         </div>
-                        <div className="auto_show_center">
+                        <div className="animate animate_center">
                             <h3 className="text-2xl text-[rgb(1,50,250)]">42</h3>
                             <h4 className="text-xl">Our Fleet</h4>
                             <p className="text-gray-800">We provide a long rolladex of cars to  choose from, as we believe variety is the spice of life.</p>
                         </div>
-                        <div className="auto_show_center">
+                        <div className="animate animate_center">
                             <h3 className="text-2xl text-[rgb(1,50,250)]">100+</h3>
                             <h4 className="text-xl">Happy Customers</h4>
                             <p className="text-gray-800">We provide our customers with exquisite round-the-clock support and meet all their needs.</p>

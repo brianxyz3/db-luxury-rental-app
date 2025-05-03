@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Card from "../components/Card";
 import Carousel from "../components/Carousel";
 import Header from "../components/Header";
@@ -5,6 +6,25 @@ import { firstServiceColumn, secondServiceColumn, servicePageImages } from "../p
 import "../stylesheets/carousel.css"
 
 const ServicesPage = () => {
+
+
+    const options = {
+        threshold: 0.1
+    }
+
+    const animateObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {            
+            entry.target.classList.toggle("animate_show", entry.isIntersecting)
+            if (entry.isIntersecting) animateObserver.unobserve(entry.target);
+        })
+    }, options)
+
+    useEffect(() => {
+        document.querySelectorAll(".animate").forEach((element) => {
+            animateObserver.observe(element)
+        })
+    }, [])
+
     return (
         <>
             <h1 className="text-5xl text-center h-1/4 pt-24">Our Services</h1>
@@ -21,7 +41,7 @@ const ServicesPage = () => {
                 <section className="flex justify-evenly items-center flex-wrap flex-grow md:items-start md:flex-nowrap gap-4 md:gap-0">
                     <div className="md:w-[27%] w-3/4 flex flex-col gap-3">
                         {firstServiceColumn.map((card, idx) => (
-                            <Card key={idx} style="auto_show_left bg-white shadow-lg h-56 md:h-72 lg:h-56 duration-200 hover:-translate-y-2" title={card.title} description={card.description} />
+                            <Card key={idx} style="animate animate_left bg-white shadow-lg h-56 md:h-72 lg:h-56 duration-200 hover:-translate-y-2" title={card.title} description={card.description} />
                         ))
                         }
                     </div>
@@ -36,7 +56,7 @@ const ServicesPage = () => {
 
                     <div className="md:w-[27%] w-3/4 flex flex-col gap-3">
                         {secondServiceColumn.map((card, idx) => (
-                            <Card key={idx + 4} style="auto_show_right bg-white shadow-lg h-56 md:h-72 lg:h-56 duration-200 hover:-translate-y-2" title={card.title} description={card.description} />
+                            <Card key={idx + 4} style="animate animate_right bg-white shadow-lg h-56 md:h-72 lg:h-56 duration-200 hover:-translate-y-2" title={card.title} description={card.description} />
                         ))
                         }
                     </div>

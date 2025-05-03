@@ -14,7 +14,7 @@ img {
 }
 /* Utilities */
 .text_shadow {
-    text-shadow: 1px 1px 4px #fff;
+    text-shadow: 1px 1px 1px #fff;
 }
 
 .disable_scroll {
@@ -41,7 +41,9 @@ header {
     z-index: -1;
 }
 .bgHomePageHeaderImg {
+    background-color: #656464;
     background-image: url("./assets/images/altHeroImg.jpg");
+    background-blend-mode: multiply;
 }
 
 .bgServicePageHeaderImg {
@@ -55,94 +57,47 @@ header {
     display: none;
 }
 
-nav section {
-    animation: navScroll linear forwards;
-    
-        @supports (animation-timeline: view()) {
-            animation-timeline: view();
-            animation-range: 100vh 115vh;
-        }
+nav .nav_items{
+    background-color: rgba(255, 190, 0, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 
 nav section .logo:hover {
     scale: 1.2;
     transition: scale 0.5s ease-in-out;
 }
-@keyframes navScroll {
-    from {
-        background-color: rgba(0, 0, 0, 0);
-        color: #fff;
-    }
-
-    to {
-        background-color: rgba(0, 0, 0, 1);
-        color: #fff;
-        box-shadow: 1px 3px 5px #fff;
-        }
-        }
-        
-.auto_show_center {
-    animation: autoShowCenter both;
-
-    @supports (animation-timeline: view()) {
-        animation-timeline: view(80% 5%);
-    }
+   
+.animate_left {
+    transform: translateX(-25vw);
+    opacity: 0;
+    transition: all 700ms ease-in-out;
 }
 
-@keyframes autoShowCenter {
-    from {
-        transform: translateY(50%);
-        scale: 0.3;
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0%);
-        scale: 1;
-        opacity: 1;
-    }
+.animate_right {
+    transform: translateX(25vw);
+    opacity: 0;
+    transition: all 700ms ease-in-out;
 }
 
-.auto_show_left {
-    animation: autoShowLeft both;
-
-    @supports (animation-timeline: view()) {
-        animation-timeline: view(80% 5%);
-    }
+.animate_center {
+    transform: translateY(-50vw);
+    opacity: 0;
+    scale: 0.3;
+    transition: all 700ms ease-in-out;
 }
 
-@keyframes autoShowLeft {
-    0% {
-        transform: translateX(-50%);
-        scale: 0.5;
-        opacity: 0;
-    }
-
-                                                                                                                                                                                                                                                                80% {
-        transform: translateX(0%);
-        scale: 1;
-        opacity: 1;
-    }
+.animate_show {
+    opacity: 1;
+    transform: translateX(0);
+    scale: 1;
+    transform: translateY(0);
 }
 
-.auto_show_right {
-    animation: autoShowRight both;
-
-    @supports (animation-timeline: view()) {
-        animation-timeline: view(80% 5%);
-    }
-}
-
-@keyframes autoShowRight {
-    0% {
-        transform: translateX(50%);
-        scale: 0.5;
-        opacity: 0;
-    }
-
-                                                                                                                                80% {
-        transform: translateX(0%);
-        scale: 1;
-        opacity: 1;
+@media screen and (max-width: 760px) {
+    nav {
+        background-color: rgba(255, 190, 0, 0.2);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
     }
 }

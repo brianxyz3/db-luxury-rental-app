@@ -36,5 +36,6 @@
 }
 
 .phone .phone_screen .main_screen {
+    scale: 0.98;
     height: 92%;
 }

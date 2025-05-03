@@ -7,7 +7,7 @@ import ScrollWatcher from "../components/ScrollWatcher";
 const MainLayout = () => {
 
     return (
-        <section className="h-dvh" id="top">
+        <section className="h-dvh overflow-x-hidden" id="top">
             <Navbar />
             <Outlet />
             <Footer />
